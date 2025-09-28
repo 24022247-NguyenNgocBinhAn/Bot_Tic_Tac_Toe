@@ -1,8 +1,3 @@
-À đúng rồi 👍 bạn muốn **README.md** cho project Tic Tac Toe này. Mình sẽ viết một file README.md chuẩn (Markdown), giới thiệu, hướng dẫn cài đặt, cách chạy, và giải thích phần AI tìm kiếm có đối thủ. Bạn có thể copy trực tiếp vào file `README.md` trong thư mục project.
-
----
-
-```markdown
 # 🎮 Tic Tac Toe với Python & Adversarial Search
 
 ## 📌 Giới thiệu
