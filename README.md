@@ -39,9 +39,9 @@ tic_tac_toe/
 Yêu cầu:
 - Python >= 3.8
 - Các thư viện:
-  ```bash
+```bash
   pip install numpy
-````
+```
 
 (có thể mở rộng thêm `pygame`, `tkinter`, hoặc `numba` nếu muốn)
 
