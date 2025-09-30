@@ -25,8 +25,7 @@ tic_tac_toe/
 │  ├─ game.py          # logic cốt lõi: trạng thái, luật, kiểm tra thắng
 │  ├─ ai_minimax.py    # Minimax + Alpha-Beta pruning
 │  ├─ ai_mcts.py       # (tùy chọn) MCTS
-│  ├─ ui_tk.py         # (tùy chọn) giao diện tkinter
-│  └─ main.py          # chạy trò chơi (CLI hoặc GUI)
+│  └─ main.py          # chạy trò chơi (CLI)
 └─ tests/
 ├─ test_game.py
 └─ test_ai.py
@@ -40,10 +39,8 @@ Yêu cầu:
 - Python >= 3.8
 - Các thư viện:
 ```bash
-  pip install numpy
+  pip install -r requirements.txt
 ```
-
-(có thể mở rộng thêm `pygame`, `tkinter`, hoặc `numba` nếu muốn)
 
 ---
 
@@ -56,12 +53,6 @@ python src/main.py
 ```
 
 Người chơi nhập tọa độ (hàng, cột) để đánh, máy tính sẽ phản hồi bằng Minimax/Alpha-Beta.
-
-### Chạy với giao diện (nếu bật `ui_tk.py`)
-
-```bash
-python src/ui_tk.py
-```
 
 ---
 
