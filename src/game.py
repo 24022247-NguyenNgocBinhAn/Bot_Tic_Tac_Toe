@@ -11,11 +11,8 @@ class TicTacToe:
         self.board = [[" " for _ in range(3)] for _ in range(3)]
         self.current_player = "X"
 
-    def display(self):
-        """In bàn cờ (phục vụ CLI)"""
-        for row in self.board:
-            print("|".join(row))
-            print("-" * 5)
+    def display(self) -> list[list]:
+        return self.board
 
     def make_move(self, row: int, col: int) -> bool:
         """
