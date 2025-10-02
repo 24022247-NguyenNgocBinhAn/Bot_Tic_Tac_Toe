@@ -2,7 +2,7 @@ import pygame
 import sys
 from game import TicTacToe
 from config import *
-
+from ai_alphabeta import AIAlphaBeta
 
 class TicTacToeUI:
     def __init__(self):
@@ -62,6 +62,15 @@ class TicTacToeUI:
                 self.game_over = True
             else:
                 self.game.switch_player()
+                pos = AIAlphaBeta(self.game).ai_agent()
+                self.game.make_move(pos[0], pos[1])
+                self.game.switch_player()
+                winner = self.game.check_winner()
+                if winner:
+                    print("Kết quả:", winner)
+                    self.game_over = True
+
+                
             self.redraw()
 
     def redraw(self):
@@ -83,6 +92,6 @@ class TicTacToeUI:
                     self.handle_click(event.pos)
 
 
-# if __name__ == "__main__":
-#     ui = TicTacToeUI()
-#     ui.run()
+if __name__ == "__main__":
+    ui = TicTacToeUI()
+    ui.run()

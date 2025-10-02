@@ -1,10 +1,11 @@
 # src/game.py
 
 class TicTacToe:
-    def __init__(self):
-        """Khởi tạo bàn cờ 3x3 trống"""
-        self.board = [[" " for _ in range(3)] for _ in range(3)]
-        self.current_player = "X"  # X luôn đi trước
+    def __init__(self, player: str = 'X', board=None):
+        if board is None:
+            board = [[" " for _ in range(3)] for _ in range(3)]
+        self.board = board
+        self.current_player = player
 
     def reset(self):
         """Đặt lại bàn cờ mới"""        
@@ -59,3 +60,6 @@ class TicTacToe:
         """Trả về danh sách các nước đi hợp lệ (ô trống)"""
         return [(r, c) for r in range(3) for c in range(3) if self.board[r][c] == " "]
 
+    def copy_board(self, play):
+        new_board = [row[:] for row in self.board]  # copy từng hàng
+        return TicTacToe(board=new_board, player=play)
