@@ -1,4 +1,4 @@
-from game import TicTacToe
+from .game import TicTacToe
 
 def ai_alpha_beta(board: TicTacToe, depth: int, alpha: int, beta: int, is_ai: bool):
     check_winner = board.check_winner()

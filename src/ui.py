@@ -1,8 +1,8 @@
 import pygame
 import sys
-from game import TicTacToe
-from config import *
-from ai_alphabeta import AIAlphaBeta
+from .game import TicTacToe
+from .config import *
+from .ai_alphabeta import AIAlphaBeta
 
 class TicTacToeUI:
     def __init__(self):
@@ -92,6 +92,3 @@ class TicTacToeUI:
                     self.handle_click(event.pos)
 
 
-if __name__ == "__main__":
-    ui = TicTacToeUI()
-    ui.run()

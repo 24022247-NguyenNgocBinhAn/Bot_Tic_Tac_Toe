@@ -23,12 +23,9 @@ tic_tac_toe/
 ├─ requirements.txt
 ├─ src/
 │  ├─ game.py          # logic cốt lõi: trạng thái, luật, kiểm tra thắng
-│  ├─ ai_minimax.py    # Minimax + Alpha-Beta pruning
+│  ├─ ai_alphabeta.py    # Minimax + Alpha-Beta pruning
 │  ├─ ai_mcts.py       # (tùy chọn) MCTS
 │  └─ main.py          # chạy trò chơi (CLI)
-└─ tests/
-├─ test_game.py
-└─ test_ai.py
 
 ````
 

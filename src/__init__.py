@@ -1,3 +1,2 @@
-from game import TicTacToe
-
-__all__ = ["TicTacToe"]
+from .ui import TicTacToeUI
+__all__ = ["TicTacToeUI"]
